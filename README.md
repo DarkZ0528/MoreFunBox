@@ -49,7 +49,7 @@
 
 >可通过输入其他vlc播放器能够解析的视频地址进行播放
 
-#预览
+# 预览
 
 ## 使用效果:
 ![markdown](/readmefiles/try.gif)
