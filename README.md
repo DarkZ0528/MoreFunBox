@@ -3,7 +3,7 @@
 <img src="/readmefiles/preview3.png"/>
 </div>
 
-#磨坊盒子 MoreFunBox
+# 磨坊盒子 MoreFunBox
 
 >上班摸鱼利器,伪装成弹窗广告的视频播放软件
 
@@ -23,7 +23,7 @@
 
 ----
 
-##环境支持
+## 环境支持
 >JDK11	OpenJFX14	Vlcj
 ##使用方法
 + **[播放]** 设置完成视频来源后将会自动播放,网络直播可能缓冲时间较长请耐心等待
@@ -31,7 +31,7 @@
 + **[关闭]** 使用鼠标**`左键`** 点击 **`×关闭本次推荐`**即可退出程序
 
 
-##可用选项
+## 可用选项
 **1.哔哩哔哩视频**
 
 >采用 [贝贝の站](https://xbeibeix.com/) 进行BiliBili视频解析
@@ -51,17 +51,17 @@
 
 #预览
 
-##使用效果:
+## 使用效果:
 ![markdown](/readmefiles/try.gif)
 ----
-##播放界面:
+## 播放界面:
 
 ![markdown](/readmefiles/preview3.png)
 
-##主界面图:
+## 主界面图:
 
 ![markdown](/readmefiles/preview1.png)
 
-##设置界面图:
+## 设置界面图:
 
 ![markdown](/readmefiles/preview2.png)
