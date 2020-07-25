@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+
+<VBox fx:id="rootWin" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#move" prefHeight="390.0" prefWidth="300.0" style="-fx-background-color: #303030;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="club.digitallove.controller.MainController">
+   <children>
+      <HBox prefHeight="20.0" prefWidth="300.0" style="-fx-background-color: #f9f9f9;">
+         <children>
+            <Label fx:id="moveBtn" contentDisplay="CENTER" prefHeight="20.0" prefWidth="200.0" text="来自拼多多的好友推荐">
+               <font>
+                  <Font name="Microsoft YaHei Bold" size="15.0" />
+               </font></Label>
+            <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" onMouseClicked="#exit" prefHeight="20.0" prefWidth="100.0" text="X关闭本次推荐">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+         </children>
+      </HBox>
+      <AnchorPane prefHeight="170.0" prefWidth="300.0">
+         <children>
+            <ImageView fx:id="videoView" fitHeight="170.0" fitWidth="300.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" />
+            <WebView fx:id="webView" prefHeight="170.0" prefWidth="300.0" />
+            <Label alignment="CENTER" layoutY="144.0" opacity="0.8" style="-fx-background-color: ffffff;" text="广告推广 实物为准" textAlignment="CENTER" AnchorPane.rightAnchor="150.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <VBox fx:id="optWin" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0">
+         <children>
+            <Label prefHeight="15.0" prefWidth="300.0" text="磨坊盒子 MoreFunBox" textFill="#f8f8f8">
+               <font>
+                  <Font name="Microsoft YaHei UI Light" size="25.0" />
+               </font>
+            </Label>
+            <Label text="磨时间,就硬磨。摸鱼从未如此简单。" textFill="GREY">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="280.0">
+               <children>
+                  <JFXToggleButton fx:id="enableSound" alignment="CENTER_LEFT" contentDisplay="RIGHT" onMouseClicked="#muteControl" prefHeight="50.0" prefWidth="140.0" size="8.0" text="启用声音:" textAlignment="CENTER" textFill="#fff0f0" />
+                  <JFXButton alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#start" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #27BC9C;" text="开始" textFill="#f0f0f0">
+                     <HBox.margin>
+                        <Insets left="25.0" />
+                     </HBox.margin></JFXButton>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="280.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="92.0" text="视频来源:" textFill="#f0f0f0">
+                     <HBox.margin>
+                        <Insets left="8.0" />
+                     </HBox.margin>
+                  </Label>
+                  <JFXTextField fx:id="videoSrc" prefHeight="25.0" prefWidth="150.0" promptText="支持地址列表请查看[设置]" style="-fx-background-color: #f0f0f0;">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </JFXTextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="25.0" prefWidth="280.0">
+               <children>
+                  <JFXButton fx:id="aboutBtn" onMouseClicked="#setting" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: F47200;" text="设置" textFill="#f0f0f0">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton onMouseClicked="#about" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #2574E8;" text="关于" textFill="#f0f0f0">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </JFXButton>
+                  <JFXButton onMouseClicked="#exit" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #FE315D;" text="退出" textFill="#f0f0f0">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="CROSSHAIR" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</VBox>
